@@ -1,0 +1,18 @@
+expect(null).toBeNull();
+
+// Проверяет значение на truthy (любое значение, которое приводится к true)
+expect(true).toBeTruthy();
+
+// Точное сравнение с true
+expect(true).toBe(true);
+
+expect(undefined).toBeUndefined();
+
+// Проверка, что массив содержит элемент
+expect([1, 2, 3]).toContain(2);
+
+// Проверка, что строка содержит подстроку
+expect('hello, world').toMatch('hello');
+
+// Проверяет, что в объекте есть свойство с определённым значением
+expect({ key: 'value' }).toHaveProperty('key', 'value');
