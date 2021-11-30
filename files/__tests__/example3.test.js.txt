@@ -4,5 +4,7 @@ const user = {
   age: '33',
 };
 
-// Тест пройдёт успешно, так как проверяется только firstName
-expect(user).toMatchObject({ firstName: 'tolya' });
+test('toMatchObject', () => {
+    // Тест пройдёт успешно, так как проверяется только firstName
+    expect(user).toMatchObject({ firstName: 'tolya' });
+})
